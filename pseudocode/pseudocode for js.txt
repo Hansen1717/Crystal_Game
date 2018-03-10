@@ -1,0 +1,19 @@
+At document ready.
+var targetNumber
+var wins = 0
+var losses = 0
+var crystalOne = 0
+var crystalTwo = 0
+var crystalThree = 0
+var crystalFour = 0
+var yourScore = 0
+
+function
+Generate a random number to target.
+
+function
+Assign a random number to the 4 crystals vars.
+Assign the random var to the value of the buttons crystalOne to #crystal-1 button
+
+on Crystal
+	

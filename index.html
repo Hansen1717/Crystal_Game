@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/main.js"></script>
+</head>
+<body>
+    <h1 class="jumbotron text-center">Crystal Collector</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class=" panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h2>Instructions</h2>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p>At the beginning of the game you are give a random number to try and match your total score
+                                    too.</p>
+                                <p>Their are four crystals each with a a value between 1 and 12. Click the crystals to discover their value and build your score up to the target number.</p>
+                                <p>But, don't go over or you lose. The fewer crystals collected to reach the target, the higher your score!</p>
+                                <p>The values of each crystal will change at the beggining of the game.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h2>Results</h2>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h3>Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h2>Target Score</h2>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h3 id="target-score">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h2>Your Score</h2>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h3 id="your-score">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h2>Click the crystals to build your score to reach the target!</h2>
+                    </div>
+
+                    <div class="panel-body" id="crystals">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h2>High Score!</h2>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h3 id="high-score">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div  id="game-over-alert"  class="row">
+            <div class="col-md-12">
+                <div id="game-over-panel"class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h2 id="win-lose">The Results Are In!</h2>
+                    </div>
+        
+                    <div id="game-over-panel-body" class="panel-body text-center">
+                        <div class="row">
+                            <h3 class="col-md-12" id="result-message"></h3>
+                        </div>
+                        <div class="row">
+                            <button id="play-again" class="btn-lg btn-info">Play Again</button>
+                            <button id="reset-game" class="btn-lg btn-info">Reset Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>
