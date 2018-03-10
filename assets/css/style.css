@@ -7,6 +7,8 @@ body {
     margin-top: 0;
     background-color: #7ac5e2;
     color:#eee;
+    padding: 15px 0px 15px;
+    margin-bottom: 15px
 }
 
 .panel-default .panel-heading {
@@ -22,6 +24,7 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: #eee;
+    margin: 3px 0 3px;
 }
 
 h3 {
@@ -53,12 +56,12 @@ h3 {
 }
 
 p {
-    padding-bottom: 1%;
+    padding-bottom: .5%;
     font-size: 16px;
 }
 
 img {
-    width: 75%;
+    width: 60%;
     height: auto;
 }
 
